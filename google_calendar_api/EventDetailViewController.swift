@@ -14,6 +14,7 @@ class EventDetailViewController: UIViewController {
     var event: GTLCalendarEvent!
     
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var inputTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,13 @@ class EventDetailViewController: UIViewController {
         
 //        textView.text = StringUtil.jsonify(data: event!)
         textView.text = (event?.identifier)! + ": " + (event.recurringEventId ?? "")!
+        inputTextView.text = event?.descriptionProperty
     }
     
     let api = GoogleCalendarApi()
     @IBAction func eventUpdateTapped(_ sender: AnyObject) {
         let service = api.getService()
-        event.descriptionProperty = "テスト説明文"
+        event.descriptionProperty = inputTextView.text
         let query = GTLQueryCalendar.queryForEventsUpdate(withObject: event, calendarId: "primary", eventId: event.identifier)
         service.executeQuery(
             query!,

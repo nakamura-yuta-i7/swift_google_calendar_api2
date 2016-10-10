@@ -148,6 +148,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="inputTextView" destination="UiW-go-1v4" id="1yU-6i-ZFG"/>
                         <outlet property="textView" destination="Wfm-eo-zRL" id="CNI-JM-URf"/>
                     </connections>
                 </viewController>
