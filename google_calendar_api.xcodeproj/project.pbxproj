@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BF1CA2E02EF264F93CAE865 /* Pods_google_calendar_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D1E226065A197FD307DB14 /* Pods_google_calendar_api.framework */; };
+		C85D390C2B1FECB868E5A2C7 /* Pods_google_calendar_apiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 787F7AA4962DEBF3B9DF0251 /* Pods_google_calendar_apiTests.framework */; };
 		D683A8A71DAA4ABD00DA43CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8A61DAA4ABD00DA43CF /* AppDelegate.swift */; };
 		D683A8A91DAA4ABD00DA43CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8A81DAA4ABD00DA43CF /* ViewController.swift */; };
 		D683A8AC1DAA4ABD00DA43CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683A8AA1DAA4ABD00DA43CF /* Main.storyboard */; };
@@ -14,6 +16,11 @@
 		D683A8B11DAA4ABD00DA43CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D683A8AF1DAA4ABD00DA43CF /* LaunchScreen.storyboard */; };
 		D683A8BC1DAA4ABD00DA43CF /* google_calendar_apiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8BB1DAA4ABD00DA43CF /* google_calendar_apiTests.swift */; };
 		D683A8C71DAA4ABD00DA43CF /* google_calendar_apiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8C61DAA4ABD00DA43CF /* google_calendar_apiUITests.swift */; };
+		D683A8D81DAA704300DA43CF /* SelectConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8D71DAA704300DA43CF /* SelectConditionsViewController.swift */; };
+		D683A8DB1DAA890000DA43CF /* GoogleCalendarApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8DA1DAA890000DA43CF /* GoogleCalendarApi.swift */; };
+		D683A8DD1DAB1E4400DA43CF /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8DC1DAB1E4400DA43CF /* EventDetailViewController.swift */; };
+		D683A8E01DAB27E600DA43CF /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D683A8DF1DAB27E600DA43CF /* StringUtil.swift */; };
+		EE33258066CB3CF509855761 /* Pods_google_calendar_apiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC4EC116290D9DDD6168A50 /* Pods_google_calendar_apiUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295ED1785DF6F1A630460B03 /* Pods-google_calendar_api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_api.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_api/Pods-google_calendar_api.debug.xcconfig"; sourceTree = "<group>"; };
+		2A56CB6D4CA2D9E5E910AB74 /* Pods-google_calendar_apiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_apiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_apiTests/Pods-google_calendar_apiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F3CA479B7BA0F61980E04EB /* Pods-google_calendar_apiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_apiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_apiUITests/Pods-google_calendar_apiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C05776DCDE34407ACB87847 /* Pods-google_calendar_api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_api.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_api/Pods-google_calendar_api.release.xcconfig"; sourceTree = "<group>"; };
+		4DC4EC116290D9DDD6168A50 /* Pods_google_calendar_apiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_calendar_apiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787F7AA4962DEBF3B9DF0251 /* Pods_google_calendar_apiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_calendar_apiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C5BDF6DE0A8680D5AE54E8 /* Pods-google_calendar_apiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_apiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_apiTests/Pods-google_calendar_apiTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1D1E226065A197FD307DB14 /* Pods_google_calendar_api.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_google_calendar_api.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45BC58364F6B5E4E6916795 /* Pods-google_calendar_apiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-google_calendar_apiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-google_calendar_apiUITests/Pods-google_calendar_apiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D683A8A31DAA4ABD00DA43CF /* google_calendar_api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = google_calendar_api.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683A8A61DAA4ABD00DA43CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D683A8A81DAA4ABD00DA43CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +63,11 @@
 		D683A8C21DAA4ABD00DA43CF /* google_calendar_apiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = google_calendar_apiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D683A8C61DAA4ABD00DA43CF /* google_calendar_apiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = google_calendar_apiUITests.swift; sourceTree = "<group>"; };
 		D683A8C81DAA4ABD00DA43CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D683A8D61DAA657E00DA43CF /* google_calendar_api.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = google_calendar_api.entitlements; sourceTree = "<group>"; };
+		D683A8D71DAA704300DA43CF /* SelectConditionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectConditionsViewController.swift; sourceTree = "<group>"; };
+		D683A8DA1DAA890000DA43CF /* GoogleCalendarApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleCalendarApi.swift; sourceTree = "<group>"; };
+		D683A8DC1DAB1E4400DA43CF /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		D683A8DF1DAB27E600DA43CF /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF1CA2E02EF264F93CAE865 /* Pods_google_calendar_api.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85D390C2B1FECB868E5A2C7 /* Pods_google_calendar_apiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +91,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE33258066CB3CF509855761 /* Pods_google_calendar_apiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37A0162905EB9962124B8DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				295ED1785DF6F1A630460B03 /* Pods-google_calendar_api.debug.xcconfig */,
+				4C05776DCDE34407ACB87847 /* Pods-google_calendar_api.release.xcconfig */,
+				2A56CB6D4CA2D9E5E910AB74 /* Pods-google_calendar_apiTests.debug.xcconfig */,
+				79C5BDF6DE0A8680D5AE54E8 /* Pods-google_calendar_apiTests.release.xcconfig */,
+				3F3CA479B7BA0F61980E04EB /* Pods-google_calendar_apiUITests.debug.xcconfig */,
+				C45BC58364F6B5E4E6916795 /* Pods-google_calendar_apiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A13CC9534B1DE7569B62254 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1E226065A197FD307DB14 /* Pods_google_calendar_api.framework */,
+				787F7AA4962DEBF3B9DF0251 /* Pods_google_calendar_apiTests.framework */,
+				4DC4EC116290D9DDD6168A50 /* Pods_google_calendar_apiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D683A89A1DAA4ABD00DA43CF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +128,8 @@
 				D683A8BA1DAA4ABD00DA43CF /* google_calendar_apiTests */,
 				D683A8C51DAA4ABD00DA43CF /* google_calendar_apiUITests */,
 				D683A8A41DAA4ABD00DA43CF /* Products */,
+				37A0162905EB9962124B8DB1 /* Pods */,
+				8A13CC9534B1DE7569B62254 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +146,17 @@
 		D683A8A51DAA4ABD00DA43CF /* google_calendar_api */ = {
 			isa = PBXGroup;
 			children = (
+				D683A8DA1DAA890000DA43CF /* GoogleCalendarApi.swift */,
+				D683A8D61DAA657E00DA43CF /* google_calendar_api.entitlements */,
 				D683A8A61DAA4ABD00DA43CF /* AppDelegate.swift */,
+				D683A8DF1DAB27E600DA43CF /* StringUtil.swift */,
 				D683A8A81DAA4ABD00DA43CF /* ViewController.swift */,
 				D683A8AA1DAA4ABD00DA43CF /* Main.storyboard */,
 				D683A8AD1DAA4ABD00DA43CF /* Assets.xcassets */,
 				D683A8AF1DAA4ABD00DA43CF /* LaunchScreen.storyboard */,
 				D683A8B21DAA4ABD00DA43CF /* Info.plist */,
+				D683A8D71DAA704300DA43CF /* SelectConditionsViewController.swift */,
+				D683A8DC1DAB1E4400DA43CF /* EventDetailViewController.swift */,
 			);
 			path = google_calendar_api;
 			sourceTree = "<group>";
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A8CB1DAA4ABD00DA43CF /* Build configuration list for PBXNativeTarget "google_calendar_api" */;
 			buildPhases = (
+				59FCFF49764AE52A60B78F0D /* [CP] Check Pods Manifest.lock */,
 				D683A89F1DAA4ABD00DA43CF /* Sources */,
 				D683A8A01DAA4ABD00DA43CF /* Frameworks */,
 				D683A8A11DAA4ABD00DA43CF /* Resources */,
+				3FD03F98FC91CDCA11A6FFB8 /* [CP] Embed Pods Frameworks */,
+				83F4DCAB2CD4E0E2D0F8AAD2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A8CE1DAA4ABD00DA43CF /* Build configuration list for PBXNativeTarget "google_calendar_apiTests" */;
 			buildPhases = (
+				F8F49DB834BF701CA72C36A2 /* [CP] Check Pods Manifest.lock */,
 				D683A8B31DAA4ABD00DA43CF /* Sources */,
 				D683A8B41DAA4ABD00DA43CF /* Frameworks */,
 				D683A8B51DAA4ABD00DA43CF /* Resources */,
+				5692EA1B9686E2BBC6E0BC49 /* [CP] Embed Pods Frameworks */,
+				5DDDB7E6048FB7A60AA67024 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D683A8D11DAA4ABD00DA43CF /* Build configuration list for PBXNativeTarget "google_calendar_apiUITests" */;
 			buildPhases = (
+				54239791E6B9666B756C12D9 /* [CP] Check Pods Manifest.lock */,
 				D683A8BE1DAA4ABD00DA43CF /* Sources */,
 				D683A8BF1DAA4ABD00DA43CF /* Frameworks */,
 				D683A8C01DAA4ABD00DA43CF /* Resources */,
+				8F8E83466206D88252648768 /* [CP] Embed Pods Frameworks */,
+				AB662C82CD905DEF1095A626 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +256,14 @@
 				TargetAttributes = {
 					D683A8A21DAA4ABD00DA43CF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8RMNYW4KE5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					D683A8B61DAA4ABD00DA43CF = {
 						CreatedOnToolsVersion = 8.0;
@@ -254,13 +324,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FD03F98FC91CDCA11A6FFB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_api/Pods-google_calendar_api-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54239791E6B9666B756C12D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5692EA1B9686E2BBC6E0BC49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_apiTests/Pods-google_calendar_apiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59FCFF49764AE52A60B78F0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DDDB7E6048FB7A60AA67024 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_apiTests/Pods-google_calendar_apiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83F4DCAB2CD4E0E2D0F8AAD2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_api/Pods-google_calendar_api-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8E83466206D88252648768 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_apiUITests/Pods-google_calendar_apiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB662C82CD905DEF1095A626 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-google_calendar_apiUITests/Pods-google_calendar_apiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8F49DB834BF701CA72C36A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D683A89F1DAA4ABD00DA43CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D683A8A91DAA4ABD00DA43CF /* ViewController.swift in Sources */,
+				D683A8DD1DAB1E4400DA43CF /* EventDetailViewController.swift in Sources */,
+				D683A8E01DAB27E600DA43CF /* StringUtil.swift in Sources */,
 				D683A8A71DAA4ABD00DA43CF /* AppDelegate.swift in Sources */,
+				D683A8D81DAA704300DA43CF /* SelectConditionsViewController.swift in Sources */,
+				D683A8DB1DAA890000DA43CF /* GoogleCalendarApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +545,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -382,6 +595,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -408,8 +622,11 @@
 		};
 		D683A8CC1DAA4ABD00DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 295ED1785DF6F1A630460B03 /* Pods-google_calendar_api.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = google_calendar_api/google_calendar_api.entitlements;
+				DEVELOPMENT_TEAM = 8RMNYW4KE5;
 				INFOPLIST_FILE = google_calendar_api/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnkmr.google-calendar-api";
@@ -420,8 +637,11 @@
 		};
 		D683A8CD1DAA4ABD00DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C05776DCDE34407ACB87847 /* Pods-google_calendar_api.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = google_calendar_api/google_calendar_api.entitlements;
+				DEVELOPMENT_TEAM = 8RMNYW4KE5;
 				INFOPLIST_FILE = google_calendar_api/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gnkmr.google-calendar-api";
@@ -432,6 +652,7 @@
 		};
 		D683A8CF1DAA4ABD00DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A56CB6D4CA2D9E5E910AB74 /* Pods-google_calendar_apiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +667,7 @@
 		};
 		D683A8D01DAA4ABD00DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C5BDF6DE0A8680D5AE54E8 /* Pods-google_calendar_apiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +682,7 @@
 		};
 		D683A8D21DAA4ABD00DA43CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F3CA479B7BA0F61980E04EB /* Pods-google_calendar_apiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = google_calendar_apiUITests/Info.plist;
@@ -473,6 +696,7 @@
 		};
 		D683A8D31DAA4ABD00DA43CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45BC58364F6B5E4E6916795 /* Pods-google_calendar_apiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = google_calendar_apiUITests/Info.plist;
@@ -503,6 +727,7 @@
 				D683A8CD1DAA4ABD00DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D683A8CE1DAA4ABD00DA43CF /* Build configuration list for PBXNativeTarget "google_calendar_apiTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +736,7 @@
 				D683A8D01DAA4ABD00DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D683A8D11DAA4ABD00DA43CF /* Build configuration list for PBXNativeTarget "google_calendar_apiUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +745,7 @@
 				D683A8D31DAA4ABD00DA43CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="google_calendar_api" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,9 +19,141 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <segue destination="BOg-Xx-a1v" kind="show" identifier="gotoSelectConditionsSegue" id="0Hb-vu-jza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Select Conditions View Controller-->
+        <scene sceneID="9xq-Ar-bye">
+            <objects>
+                <viewController id="BOg-Xx-a1v" customClass="SelectConditionsViewController" customModule="google_calendar_api" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nsF-rZ-eii"/>
+                        <viewControllerLayoutGuide type="bottom" id="8f2-gw-u5N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IKJ-dD-K2A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vd1-GL-axg">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" textLabel="qRu-Dz-hdd" detailTextLabel="Fc3-pe-hJ4" style="IBUITableViewCellStyleSubtitle" id="h3o-ul-cQo">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3o-ul-cQo" id="DrS-cM-AQJ">
+                                            <frame key="frameInset" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qRu-Dz-hdd">
+                                                    <frame key="frameInset" minX="15" minY="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fc3-pe-hJ4">
+                                                    <frame key="frameInset" minX="15" minY="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8f2-gw-u5N" firstAttribute="top" secondItem="vd1-GL-axg" secondAttribute="bottom" id="9t7-Y9-pMo"/>
+                            <constraint firstItem="vd1-GL-axg" firstAttribute="leading" secondItem="IKJ-dD-K2A" secondAttribute="leading" id="R5Q-Th-5fZ"/>
+                            <constraint firstItem="vd1-GL-axg" firstAttribute="top" secondItem="nsF-rZ-eii" secondAttribute="bottom" id="a0S-UJ-js4"/>
+                            <constraint firstAttribute="trailing" secondItem="vd1-GL-axg" secondAttribute="trailing" id="tsY-1y-cVP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="vd1-GL-axg" id="qj9-qc-PFg"/>
+                        <segue destination="Sq3-Tk-vDi" kind="show" identifier="gotoEventDetailSegue" id="Hvt-V0-Ghn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nld-t3-3a4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826.39999999999998" y="129.98500749625188"/>
+        </scene>
+        <!--Event Detail View Controller-->
+        <scene sceneID="UNg-2b-5d9">
+            <objects>
+                <viewController id="Sq3-Tk-vDi" customClass="EventDetailViewController" customModule="google_calendar_api" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oya-CA-zDO"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXe-mT-eNH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jFn-xx-Wve">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wfm-eo-zRL">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="dB2-gE-hc0"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UiW-go-1v4" customClass="DesignableTextView" customModule="Spring">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Zdn-FK-OnS"/>
+                                    <constraint firstAttribute="height" constant="128" id="upO-E5-XWY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.17257410287857056" green="0.21834245324134827" blue="0.44677489995956421" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-bw-ZhH">
+                                <state key="normal" title="Event Update"/>
+                                <connections>
+                                    <action selector="eventUpdateTapped:" destination="Sq3-Tk-vDi" eventType="touchUpInside" id="51T-M8-pej"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DAh-bw-ZhH" firstAttribute="top" secondItem="UiW-go-1v4" secondAttribute="bottom" constant="40" id="MJF-sJ-fEW"/>
+                            <constraint firstItem="Wfm-eo-zRL" firstAttribute="top" secondItem="oya-CA-zDO" secondAttribute="bottom" constant="38" id="iiW-wN-Y9G"/>
+                            <constraint firstItem="UiW-go-1v4" firstAttribute="centerX" secondItem="jFn-xx-Wve" secondAttribute="centerX" id="jAX-Uf-LCY"/>
+                            <constraint firstItem="DAh-bw-ZhH" firstAttribute="centerX" secondItem="jFn-xx-Wve" secondAttribute="centerX" id="nBw-fD-lHq"/>
+                            <constraint firstAttribute="trailing" secondItem="Wfm-eo-zRL" secondAttribute="trailing" id="nHn-bY-8oI"/>
+                            <constraint firstItem="UiW-go-1v4" firstAttribute="top" secondItem="Wfm-eo-zRL" secondAttribute="bottom" constant="39" id="qJ9-9q-vBG"/>
+                            <constraint firstItem="Wfm-eo-zRL" firstAttribute="leading" secondItem="jFn-xx-Wve" secondAttribute="leading" id="vbd-A8-gOX"/>
+                            <constraint firstItem="Wfm-eo-zRL" firstAttribute="centerX" secondItem="jFn-xx-Wve" secondAttribute="centerX" id="wDu-l6-9zq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="Wfm-eo-zRL" id="CNI-JM-URf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G6E-Uc-cgu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1685.5999999999999" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>
